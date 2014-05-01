@@ -1,16 +1,160 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_black4"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.swipetest.MainActivity$PlaceholderFragment" >
+    tools:context=".MainActivity" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                style="@style/MyNumericalButtonStyle"
+                android:src="@drawable/black1_1_2" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                style="@style/MyNumericalButtonStyle"
+                android:src="@drawable/black2_1_2" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                style="@style/MyNumericalButtonStyle"
+                android:src="@drawable/black3_1_2" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                style="@style/MyNumericalButtonStyle"
+                android:src="@drawable/black4_1_2" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                style="@style/MyNumericalButtonStyle"
+                android:src="@drawable/black5_1_2" />
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                style="@style/MyNumericalButtonStyle"
+                android:src="@drawable/black6_1_2" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                style="@style/MyNumericalButtonStyle"
+                android:src="@drawable/black7_1_2" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                style="@style/MyNumericalButtonStyle"
+                android:src="@drawable/black8_1_2" />
+
+            <ImageButton
+                android:id="@+id/imageButton9"
+                style="@style/MyNumericalButtonStyle"
+                android:src="@drawable/black9_1_2" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <ImageButton
+                android:id="@+id/imageButton0"
+                style="@style/MyNumericalButtonStyle"
+                android:src="@drawable/black0_1_2" />
+        </TableRow>
+    </TableLayout>
+
+    <ImageButton
+        android:id="@+id/imageButtonPower"
+        style="@style/MyImageButtonStyle"
+        android:layout_alignLeft="@+id/imageButtonVolUp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/black_power1_2" />
 
     <TextView
-        android:id="@+id/section_label"
+        android:id="@+id/TextViewChannel"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButtonChUp"
+        android:layout_alignRight="@+id/imageButtonChDown"
+        android:layout_below="@+id/imageButtonChUp"
+        android:gravity="center_horizontal"
+        android:text="Ch"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <ImageButton
+        android:id="@+id/imageButtonVolUp"
+        style="@style/MyImageButtonStyle"
+        android:layout_alignLeft="@+id/tableLayout1"
+        android:layout_below="@+id/imageButtonPower"
+        android:paddingTop="10dip"
+        android:src="@drawable/black_plus1_2" />
+
+    <ImageButton
+        android:id="@+id/imageButtonVolDown"
+        style="@style/MyImageButtonStyle"
+        android:layout_alignLeft="@+id/textViewVolume"
+        android:layout_below="@+id/TextViewChannel"
+        android:paddingTop="5dip"
+        android:src="@drawable/black_minus1_2" />
+
+    <TextView
+        android:id="@+id/textViewVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButtonVolDown"
+        android:layout_alignLeft="@+id/imageButtonVolUp"
+        android:layout_alignRight="@+id/imageButtonVolUp"
+        android:gravity="center_horizontal"
+        android:text="Vol"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <ImageButton
+        android:id="@+id/imageButtonChDown"
+        style="@style/MyImageButtonStyle"
+        android:layout_alignRight="@+id/tableLayout1"
+        android:layout_alignTop="@+id/imageButtonVolDown"
+        android:paddingTop="5dip"
+        android:src="@drawable/black_arrow_down1_2" />
+
+    <ImageButton
+        android:id="@+id/imageButtonChUp"
+        style="@style/MyImageButtonStyle"
+        android:layout_alignLeft="@+id/imageButtonChDown"
+        android:layout_alignTop="@+id/imageButtonVolUp"
+        android:src="@drawable/black_arrow_up1_2" />
 
 </RelativeLayout>
