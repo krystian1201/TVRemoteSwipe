@@ -1,6 +1,8 @@
-package com.example.swipetest;
+package com.example.tvremoteswipe;
 
 import java.util.Locale;
+
+import com.example.swipetest.R;
 
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
@@ -17,7 +19,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity 
 {
